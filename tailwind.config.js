@@ -16,7 +16,7 @@ module.exports = {
         "r3-1fr": "repeat(3, 1fr)",
       },
       lineHeight: {
-        "tight": "1.2",
+        tight: "1.2",
       },
     },
   },

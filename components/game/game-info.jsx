@@ -5,13 +5,16 @@ import { CrossIcon } from "./icons/cross-icon";
 export function GameInfo({ className }) {
   return (
     <div
-      className={clsx(className, "bg-white py-4 px-8 rounded-2xl shadow-ml flex justify-between")}
+      className={clsx(
+        className,
+        "bg-white py-4 px-8 rounded-2xl shadow-ml flex justify-between",
+      )}
     >
       <div className="flex gap-3 items-center">
         <div className="relative">
           <Profile className="w-[180px]" />
           <div className="bg-white w-5 h-5 rounded-full shadow absolute -left-1 -top-1 p-1">
-            <CrossIcon/>
+            <CrossIcon />
           </div>
         </div>
         <div className="h-6 w-px bg-slate-200" />
@@ -23,7 +26,7 @@ export function GameInfo({ className }) {
         <div className="relative">
           <Profile className="w-[180px]" />
           <div className="bg-white w-5 h-5 rounded-full shadow absolute -left-1 -top-1 p-1">
-            <CrossIcon/>
+            <CrossIcon />
           </div>
         </div>
       </div>

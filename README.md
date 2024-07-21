@@ -1,2 +1,25 @@
 # Tik-tak-toe-online
-Online game 'tik tak toe' for React
+
+Онлайн игра 'tik tak toe' на React
+
+# Запуск полекта
+
+npm run start
+
+# Установка зависимостей
+
+npm ci
+
+## Настройка ESLint
+
+npx next lint
+
+## Настройка Prettier
+
+npm install --save-dev --save-exact prettier
+
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+
+npx prettier . --write

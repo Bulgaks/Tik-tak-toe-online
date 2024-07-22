@@ -20,7 +20,7 @@ export function UiButton({ children, className, size, variant }) {
     }[size],
     {
       primary: "bg-teal-600 hover:bg-teal-500 text-white",
-      outline: "border border-teal-600 hover:bg-teal-50",
+      outline: "border border-teal-600 text-teal-600 hover:bg-teal-50",
     }[variant],
   );
 

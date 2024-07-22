@@ -7,7 +7,7 @@ export function GameInfo({ className }) {
     <div
       className={clsx(
         className,
-        "bg-white py-4 px-8 rounded-2xl shadow-ml flex justify-between",
+        "bg-white py-4 px-8 rounded-2xl shadow-lg flex justify-between",
       )}
     >
       <div className="flex gap-3 items-center">

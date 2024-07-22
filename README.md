@@ -2,7 +2,7 @@
 
 Онлайн игра 'tik tak toe' на React
 
-# Запуск полекта
+# Запуск проекта
 
 npm run start
 

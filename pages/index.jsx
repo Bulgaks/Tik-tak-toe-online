@@ -4,11 +4,12 @@ import { GameInfo } from "../components/game/game-info.jsx";
 import { GameTitle } from "../components/game/game-title.jsx";
 import Header from "../components/header/header.jsx";
 import { useGameState } from "../components/game/use-game-state.js";
+import { GameSymbol } from "../components/game/game-symbol.jsx";
 
 export default function HomePage() {
-  const [playersCount] = useState(2);
+  const [playersCount] = useState(4);
 
-  const { cells, currentMove, handleCellClick, nextMove, winnerSequence } =
+  const { cells, currentMove, handleCellClick, nextMove, winnerSequence, handlePlayerTimeOver, winnerSymbol } =
     useGameState(playersCount);
 
   return (
@@ -20,8 +21,12 @@ export default function HomePage() {
           className="mt-4"
           playersCount={playersCount}
           currentMove={currentMove}
-          isWinner={!!winnerSequence}
+          isWinner={!!winnerSymbol}
+          onPlayerTimeOver={handlePlayerTimeOver}
         />
+        {winnerSymbol && (
+          <div><GameSymbol classname="my-4" symbol={winnerSymbol} /></div>
+        )}
         <GameField
           className="mt-6"
           cells={cells}
@@ -29,6 +34,7 @@ export default function HomePage() {
           nextMove={nextMove}
           handleCellClick={handleCellClick}
           winnerSequence={winnerSequence}
+          winnerSymbol={winnerSymbol}
         />
       </main>
     </div>
